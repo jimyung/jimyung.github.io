@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+<title>Google Maps</title>
+  <style>
+
+  body{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  img{
+  width: 28px;
+  }
+  header{
+  width:100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  }
+
+  li{
+  list-style: none;
+   }
+   .topiconleft{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  height: 80px;
+  background-color: #4285f4;
+   }
+      ul{
+  margin: 0;
+  padding: 0;
+  }
+  p{
+  margin: 0;
+  }
+
+  .topiconright{
+  position: fixed;
+    background-color: #4285f4;
+
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  }
+.topleft{
+  position: fixed;
+  top: 80px;
+  left: 0;
+  width: 10%;
+  height: 200px;
+  background-color: #4285f4;
+  }
+  .topright{
+  
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 90%;
+  height: 200px;
+  background-color: #4285f4;
+  }
+  .foot{
+  position: fixed;
+  top: 280px;
+  left: 0;
+  width: 100%;
+  right: 0;
+  background-color: #3267d6;
+  height: 80px;
+
+  
+  }
+  .topimg li{
+  display: inline-block;
+  padding-right: 15px;
+  }
+  .lineicon{
+  width: 27px;
+  float: left;
+  padding: 50px 10px 0 12px;
+  margin: 0;
+  }
+  .fix{
+  position: fixed;
+  top: 22px;
+  left: 40px;
+  }
+  .topimg{
+  padding: 22px 45px;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  }
+  .updown{
+  overflow: hidden;
+  float: left;
+  margin-top: 82px;
+  margin-left: 10px;
+  display: inline-block;
+  
+  }
+  .textbox{
+  float: left;
+  height: 100%;
+  width: 70%;
+  padding-left: 20px;
+}
+  .kawon{
+    overflow: visible;
+  white-space: nowrap; 
+  padding-top: 55px;
+  display: inline-block;
+  width: 100%;
+  border-bottom: 1px solid white;
+  padding-bottom: 20px;
+   
+  }
+  .sinsa{
+    overflow: visible;
+  white-space: nowrap; 
+  display: inline-block;
+  padding-top: 20px;
+  width: 100%;
+  }
+
+  .depart{
+  
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 90%;
+  display: inline-block;
+  }
+  .leftfoot{
+  position: absolute;
+  top: 0;
+  height: 80px;
+  width: 10%;
+  
+  }
+
+  .option{
+
+
+  float: right;
+  padding-top: 25px;
+  padding-right: 20%;
+  }
+  .footimg{
+  float: left;
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 11px;
+  }
+  .time{
+  padding-left: 30px;
+  display: inline-block;
+  padding-top: 30px;
+  }
+  .leftmain{
+  position: fixed;
+  top: 360px;
+  height: 100%;
+  left: 0;
+  width: 10%;
+  }
+  .rightmain{
+  overflow-y: scroll;
+  position: fixed;
+  top: 360px;
+  height: 70%;
+  right: 0;
+  width: 90%;
+  }
+
+  .file{
+  color: #b1b1b1;
+  }
+  h2{
+  color: #222222;
+  margin: 0;
+  }
+  .forpo{
+  position: relative;
+
+  
+  }
+  .bus{
+position: absolute;
+top:20px;
+left: 12px;
+    color:gray;
+  }
+  .imformation{
+  letter-spacing: 1px;
+  width: 100%;
+  border-bottom: 1px solid #b1b1b1;
+  float: left;
+  display: inline-block;
+  padding:20px 0 20px 67px;
+   }
+  .imformation p{
+   line-height: 2;
+  }
+  
+  
+  
+  .box{
+  background-color: #374ff2;
+  padding: 2px;
+  color: white;
+  }
+    .box2{
+  background-color: #f1280a;
+  padding: 2px;
+  color: white;
+  }
+    .box3{
+  background-color: #0bba0e;
+  padding: 2px;
+  color: white;
+  }
+  
+  .space{
+  margin-left: 20px;
+  
+  }
+  .bol{
+  font-weight: bold;
+  
+  }
+  .on{
+  padding-right:25%;
+  overflow: hidden;
+  white-space: nowrap; 
+  position: relative;
+   }
+  .time2{
+  font-size: 120%;
+   position: absolute;
+   top:23px;
+   right:20%;
+   color: #111111;
+   }
+  
+
+@media screen and (max-width:600px){
+
+.box{
+display: none;
+
+}
+.box2{
+display: none;
+
+}
+.box3{
+display: none;
+
+}
+
+}
+  </style>
+</head>
+<body>
+<header>
+<div class="topiconleft">
+</div>
+<div class="topiconright">
+<ul class="topimg">
+<li><i class="fix fa fa-reply"></i></li>
+<li class="mov"> <i class="fa fa-bus"></i></li>
+<li class="mov"> <i class="fa fa-fighter-jet"></i></li>
+<li class="mov"> <i class="fa fa-bicycle"></i></li>
+</ul>
+</div>
+
+<div class="topleft">
+</div>
+  <div class="topright">
+<div class="lineicon">
+<img src="http://google.github.io/material-design-icons/action/svg/ic_room_24px.svg" alt="a">
+<img src="http://google.github.io/material-design-icons/navigation/svg/ic_more_vert_24px.svg" alt="a">
+<img src="http://google.github.io/material-design-icons/action/svg/ic_room_24px.svg" alt="a">
+</div>
+<div class="textbox">
+<div class="kawon">계원예술대학교</div>
+<div class="sinsa">신사동 가로수길</div>
+</div>
+<div class="updown"><img src="http://google.github.io/material-design-icons/navigation/svg/ic_unfold_more_24px.svg" alt="a"></div></div>
+<div class="foot">
+<div class="leftfoot"></div>
+<div class="depart">
+  <i class="footimg fa fa-sliders"></i>
+<p class="time">Depart at 4:09 PM</p>
+<div class="option"><p>OPTIONS</p></div>
+</div>
+</div>
+</header>
+<div class="leftmain">
+
+</div>
+<div class="rightmain">
+<ul class="forpo">
+<li class="on">
+<div class="bus" ><i class="fa fa-bus"></i></div>
+<div class="imformation">
+<h2>4:09 - 5:35PM</h2><br>
+<p class="file"><img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_walk_24px.svg" alt="a">
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">1-1</span> > <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">441</span><br>
+4:25PM from 계원예술대학교 <br>
+<i class="fa fa-child"></i>
+10min  <span class="space">Every 10min</span></p>
+<div class="time2"> <span class="bol">1</span> hr <span class="bol">25</span> min </div>
+</div>
+</li>
+
+<li class="on">
+<div class="bus" ><i class="fa fa-bus"></i></div>
+<div class="imformation">
+<h2>4:09 - 5:41PM</h2><br>
+<p class="file"><img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_walk_24px.svg" alt="a">
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">1-1</span>
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box3">4318</span> > <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box2">9404</span><br>
+4:25PM from 계원예술대학교 <br>
+<i class="fa fa-child"></i>
+10min  <span class="space">Every 12min</span></p>
+<div class="time2"> <span class="bol">1</span> hr <span class="bol">31</span> min </div>
+</div>
+</li>
+
+<li class="on">
+<div class="bus" ><i class="fa fa-bus"></i></div>
+<div class="imformation">
+<h2>4:09 - 5:49PM</h2><br>
+<p class="file"><img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_walk_24px.svg" alt="a">
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">51</span>
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">540</span> > <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">148</span><br>
+4:25PM from 계원예술대학교 <br>
+<i class="fa fa-child"></i>
+10min  <span class="space">Every 12min</span></p>
+<div class="time2"> <span class="bol">1</span> hr <span class="bol">31</span> min </div>
+</div>
+</li>
+
+<li class="on">
+<div class="bus" ><i class="fa fa-bus"></i></div>
+<div class="imformation">
+<h2>4:09 - 5:47PM</h2><br>
+<p class="file"><img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_walk_24px.svg" alt="a">
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">51</span>
+> <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box2">3030</span> > <img src="http://google.github.io/material-design-icons/maps/svg/ic_directions_bus_24px.svg" alt="a">
+<span class="box">145</span><br>
+4:22PM from 계원예술대학교 <br>
+<i class="fa fa-child"></i>
+10min  <span class="space">Every 12min</span></p>
+<div class="time2"> <span class="bol">1</span> hr <span class="bol">38</span> min </div>
+</div>
+</li>
+
+
+</ul>
+</div>
+</body>
+</html>
