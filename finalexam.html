@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type='text/css'>
+<title>Google Maps</title>
+  <style>
+        @media (max-width:500px){
+          body {
+            margin:0; padding:0;  text-align:center; 
+          }
+        }
+  body{
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+  img{
+  width: 28px;
+  }
+  header{
+  width:100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  }
+
+  li{
+  list-style: none;
+   }
+      ul{
+  margin: 0;
+  padding: 0;
+  }
+  p{
+  margin: 0;
+  }
+
+  .topiconright{
+  position: fixed;
+    background-color: #368D9C;
+
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+  }
+  .topright{
+  
+  position: fixed;
+  top: 80px;
+  right: 0;
+  width: 100%;
+  height: 200px;
+  background-color: #36B8CF;
+  }
+  .mondaybox{
+  position: fixed;
+  top: 280px;
+  left: 0;
+  width: 100%;
+  right: 0;
+  background-color: #5D5D5D;
+  height: 60px;
+
+  
+  }
+  .topimg li{
+  display: inline-block;
+  padding-right: 15px;
+  }
+  .fix{
+  position: fixed;
+  top: 22px;
+  left: 40px;
+  }
+  .topimg{
+  padding: 22px 45px;
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  }
+    .angle{
+  width: 27px;
+  float: left;
+  padding: 70px 10px 0 12px;
+  margin: 0;
+  }
+  .angle2{
+    width: 27px;
+  float: right;
+  padding: 70px 10px 0 12px;
+  margin: 0;
+  }
+  .textbox{
+  float: left;
+  height: 100%;
+  width: 70%;
+  padding-left: 20px;
+}
+  .eight{
+    font-size:100px;
+    overflow: visible;
+  white-space: nowrap; 
+  padding-top: 15px;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 10px;
+    text-align:center;
+   
+  }
+  .july{
+    text-align:center;
+    font-size:20px;
+    overflow: visible;
+  white-space: nowrap; 
+  display: inline-block;
+  padding-top: 20px;
+  width: 100%;
+  }
+
+  .monbox{
+  position: absolute;
+  right: 0;
+  top:0;
+  width: 90%;
+  display: inline-block;
+  }
+
+  .option{
+
+
+  float: right;
+  padding-top: 25px;
+  padding-right: 20%;
+  }
+  .footimg{
+  float: left;
+  display: inline-block;
+  padding-top: 25px;
+  padding-left: 11px;
+  }
+  .monday{
+  padding-left: -10px;
+  display: inline-block;
+  padding-top: 20px;
+  }
+  .leftmain{
+  position: fixed;
+  top: 360px;
+  height: 100%;
+  left: 0;
+  width: 10%;
+  }
+  .rightmain{
+    overflow-y : scroll ;
+  position: fixed;
+  top: 360px;
+  height: 70%;
+  right: 0;
+  width: 95%;
+  }
+
+  .file{
+  color: #b1b1b1;
+  }
+  h1{
+  color: gray;
+  margin: 0;
+  }
+  .forpo{
+  position: relative;
+
+  
+  }
+    .alarmtime{
+      font-size:40px;
+    }
+        .alarmtime2{
+      font-size:40px;
+          color:#C9C9C9;
+    }
+  .bell{
+position: absolute;
+top:40px;
+left: 30px;
+    color:#36B8CF;
+  }
+      .bell2{
+position: absolute;
+top:40px;
+left: 30px;
+    color:#C9C9C9;
+  }
+  .imformation{
+  letter-spacing: 1px;
+  width: 100%;
+  border-bottom: 1px solid #b1b1b1;
+  float: left;
+  display: inline-block;
+  padding:30px 0 30px 87px;
+   }
+  .imformation p{
+   line-height: 2;
+  }
+    .blue{
+      color:#36B8CF;
+    }
+  
+  .day{
+  margin-left: 20px;
+  
+  }
+  .bol{
+  font-weight: bold;
+  
+  }
+  .on{
+  padding-right:25%;
+  overflow: hidden;
+  white-space: nowrap; 
+  position: relative;
+   }
+  .toggle{
+  font-size: 120%;
+   position: absolute;
+   top:23px;
+   right:20%;
+   color: #36B8CF;
+   }
+      .toggle2{
+  font-size: 120%;
+   position: absolute;
+   top:23px;
+   right:20%;
+   color: #C9C9C9;
+   }
+    .iconpack{
+      float:right;
+      margin-right:-40px;
+    }
+    
+  </style>
+</head>
+<body>
+<header>
+<div class="topiconright">
+  <div class="iconpack">
+<ul class="topimg">
+<li> <i class="fa fa-minus"></i></li>
+<li> <i class="fa fa-square-o"></i></li>
+<li> <i class="fa fa-times"></i></li>
+</ul>
+  </div>
+</div>
+  <div class="topright">
+<div class="angle">
+<i class="fa fa-arrow-left fa-2x"></i>
+</div>
+<div class="textbox">
+  <div class="eight">18</div>
+  <div class="july"><strong>July 2014</strong></div>
+</div>
+<div class="angle2"><i class="fa fa-arrow-right fa-2x"></i></div>
+<div class="mondaybox">
+<div class="monbox">
+  <p class="monday"><strong>MONDAY</strong></p>
+</div>
+</div>
+  </div>
+</header>
+<div class="leftmain">
+
+</div>
+<div class="rightmain">
+<ul class="forpo">
+<li class="on">
+<div class="bell" ><i class="fa fa-bell fa-1g"></i></div>
+<div class="imformation">
+<h1 class="alarmtime">06:30</h1><br>
+  <p class="file"><span class="day"><strong><span class="blue">SU</span> MO <span class="blue">TU</span> <span class="blue">WE</span> TH <span class="blue">FR</span> <span class="blue">SA</span></strong></span></p>
+<div class="toggle"> <i class="fa fa-toggle-on fa-2x"></i> </div>
+</div>
+</li>
+  <li class="on">
+<div class="bell2" ><i class="fa fa-bell fa-1g"></i></div>
+<div class="imformation">
+<h1 class="alarmtime2">09:30</h1><br>
+  <p class="file"><span class="day"><strong>SU MO TU <span class="blue">WE</span> TH FR SA</strong></span></p>
+<div class="toggle2"> <i class="fa fa-toggle-off fa-2x"></i> </div>
+</div>
+</li>
+  <li class="on">
+<div class="bell" ><i class="fa fa-bell fa-1g"></i></div>
+<div class="imformation">
+<h1 class="alarmtime">15:30</h1><br>
+  <p class="file"><span class="day"><strong><span class="blue">SU</span> MO TU WE TH FR SA</strong></span></p>
+<div class="toggle"> <i class="fa fa-toggle-on fa-2x"></i> </div>
+</div>
+</li>
+  <li class="on">
+<div class="bell2" ><i class="fa fa-bell fa-1g"></i></div>
+<div class="imformation">
+<h1 class="alarmtime2">20:30</h1><br>
+  <p class="file"><span class="day"><strong>SU MO <span class="blue">TU</span> <span class="blue">WE</span> TH FR <span class="blue">SA</span></strong></span></p>
+<div class="toggle2"> <i class="fa fa-toggle-off fa-2x"></i> </div>
+</div>
+</li>
+</ul>
+</div>
+  
+  
+</body>
+</html>
